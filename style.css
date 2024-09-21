@@ -1,0 +1,125 @@
+* {box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+@font-face {
+    font-family: cheesematcha;
+    src: url(fonts/Cheese\ Matcha.otf);
+}
+
+
+html {
+     margin-left: 50px ;
+    margin-right: 50px;
+    font-family: cheesematcha;
+    font-size: 16px;
+}
+
+body {}
+
+
+header {
+    background-color: rgb(212, 255, 0);
+    min-height: 10vh;
+    min-width: 10vw;
+    background: radial-gradient(100deg, rgb(207, 249, 42), rgb(86, 195, 99));
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo img {
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 70px;
+    }
+
+
+nav {
+    background-color: blue;
+    background: linear-gradient(200deg, blue, pink, red);
+    min-width: 10vw;
+    min-height: 10vw;
+    padding: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+nav a {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 8px;
+
+}
+
+nav a:hover {
+    background-color: aqua;
+    color: black;
+    transition-delay: 100ms;
+}
+
+main {
+    /* background-color: darkred; */
+    min-height: 60vh;
+    min-width: 60vw;
+    background-image: url(images/books.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+h2
+{
+    color: white;
+}
+p {
+    color: white;
+}
+ 
+
+
+footer { color: darksalmon;}
+
+.px {
+    width: 500px;
+    height: 220px;
+    padding: 20px;
+    margin: 0 auto 25px;
+    background-color: rgba(139, 43, 230, 0.8);
+    border: 2px solid rgb(133, 2, 133);
+    font-size: 16px;
+}
+
+.cuadro_rem { /*  Toma el font size directamente del html */
+    /* para sacar el rem se dividen los pixeles 
+    en 16 */
+
+    width: 31.25rem; /* 500 px */
+    height: 15.75rem; /* 300px */
+    padding: 1.25rem;
+    margin: 1.5625rem auto;
+    background-color   :rgba(43, 185, 185, 0.9);
+    border: 2px solid rgb(232, 148, 232);
+}
+
+.cuadro_em {
+    /* para sacar el rem se dividen los pixeles 
+    en 16 */
+
+    width: 31.25em; /* 500 px */
+    height: 15.75em; /* 300px */
+    padding: 1.25em;
+    margin: 1.5625em auto;
+    background-color   :rgba(221, 60, 71, 0.9);
+    border: 2px solid rgb(212, 147, 157);
+}
+
+.em {
+    font-size: 8px;
+}
